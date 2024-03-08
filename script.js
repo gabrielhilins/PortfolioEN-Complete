@@ -95,7 +95,7 @@ const enviarEmail = (e) => {
     ) {
 
         // Mensagem de erro
-        mensagemErro.textContent = 'Preencha todos os campos obrigatórios 😉'
+        mensagemErro.textContent = 'Fill in all required fields😉'
     }
 
     else {
@@ -108,7 +108,7 @@ const enviarEmail = (e) => {
         ).then(() => {
             // Show menssage and add color, window + dot to open emoji
             mensagemErro.classList.add('color-first');
-            mensagemErro.textContent = 'Mensagem enviada com sucesso! ✔️';
+            mensagemErro.textContent = 'Mensagem sucessfully sent! ✔️';
 
             // Remover mensagem depois de 7 segundos
             setTimeout(() => {
@@ -116,7 +116,7 @@ const enviarEmail = (e) => {
             }, 5000);
         },
             (error) => {
-                alert('Oxe! Alguma coisa aconteceu de errado...', error);
+                alert('What in tarnation! Something went wrong...', error);
             }
         );
 
